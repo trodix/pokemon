@@ -45,7 +45,8 @@ with NATSClient("nats://dev.lookingfora.name:4222") as client:
                     client.publish("irc.message.send", payload=b'{"channel": "##cesi", "message": "Donne moi un nom de pokemon en parametre !!!" }')
                 else:
                     getPokemonAbilities(params)
-            else if (cmd = ""):
+            elif (cmd == ""):
+                print("autre commande")
 
             # else:
             #     response = '{"channel": "##cesi", "message": "Commande ' + cmd + ' inconnue chez trodix !" }'
